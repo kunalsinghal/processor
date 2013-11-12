@@ -27,9 +27,9 @@
 	  b <= bb; 
 	  c <= cc;
 	  wait for 20 ns; 
-	  write(outline,y); 
 	  write(outline,x); 
+	  write(outline,y); 
 	  writeline(output,outline);
 	  wait;
     end process;
-    end behav;
+     end behav;
