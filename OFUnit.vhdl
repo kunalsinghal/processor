@@ -11,7 +11,12 @@ architecture OFU of OFUnit is
 	signal reg: regvec;
 	signal temp: std_logic_vector(31 downto 0);
 begin
-	immediate<=std_logic_vector(resize(signed(Instruction(15 downto 0)),immediate'length));
+	immediate <=std_logic_vector(resize(unsigned(Instruction(15 downto 0)),immediate'length))
+				when (Instruction(16) = '1') else 
+				std_logic_vector(shift_left(unsigned(Instruction) ,16))
+				when (Instruction(17) = '1') else
+				std_logic_vector(resize(signed(Instruction(15 downto 0)),immediate'length)); 
+
 	temp<=std_logic_vector(resize(signed(Instruction(26 downto 0)),temp'length));
 	
 	branchTarget<= std_logic_vector(unsigned(std_logic_vector(shift_left(unsigned(temp),2)))+unsigned(PC));
