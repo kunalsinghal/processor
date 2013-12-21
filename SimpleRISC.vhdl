@@ -13,11 +13,11 @@ architecture main of SimpleRISC is
 
 	component CUnit is
 		port(Instruction: in std_logic_vector(31 downto 0);
-		     isMov, isSt, isLd, isBeq, isBgt, isImmediate, isWb, isUBranch: out boolean; aluS: out std_logic_vector(2 downto 0));
+		     isMov, isSt, isLd, isBeq, isBgt, isImmediate, isWb, isUBranch,isRet,isCall: out boolean; aluS: out std_logic_vector(2 downto 0));
 	end component CUnit;
 
 	component OFUnit is
-		port(clk: in std_logic; Instruction, PC, aluR, ldR: in std_logic_vector(31 downto 0); isSt, isLd, isWb: in boolean;
+		port(clk: in std_logic; Instruction, PC, aluR, ldR: in std_logic_vector(31 downto 0); isSt, isLd, isWb,isRet,isCall: in boolean;
 		     immediate, branchTarget, op1, op2: out std_logic_vector(31 downto 0));
 	end component OFUnit;
 
@@ -33,13 +33,13 @@ architecture main of SimpleRISC is
 	signal clk: std_logic:='0';
 	signal PC: std_logic_vector(31 downto 0):=X"FFFFFFFC";
 	signal instruction: std_logic_vector(31 downto 0);
-	signal isMov, isSt, isLd, isBeq, isBgt, isImmediate, isWb, isUbranch, isBranchTaken: boolean:=false;
+	signal isMov, isSt, isLd, isBeq, isBgt, isImmediate, isWb, isUbranch, isBranchTaken,isRet,isCall: boolean:=false;
 	signal aluS: std_logic_vector(2 downto 0);
 	signal aluR, ldR, immediate, branchTarget, op1, op2: std_logic_vector(31 downto 0):=X"00000000";
 begin
 	iif: IFUnit port map(PC, instruction);
-	icu: CUnit port map (instruction, isMov, isSt, isLd, isBeq, isBgt, isImmediate, isWb, isUBranch, aluS);
-	iof: OFUnit port map(clk, instruction, PC, aluR, ldR, isSt, isLd, isWb, immediate, branchTarget, op1, op2);
+	icu: CUnit port map (instruction, isMov, isSt, isLd, isBeq, isBgt, isImmediate, isWb, isUBranch,isRet,isCall, aluS);
+	iof: OFUnit port map(clk, instruction, PC, aluR, ldR, isSt, isLd, isWb,isRet,isCall, immediate, branchTarget, op1, op2);
 	iex: EXUnit port map(op1, op2, immediate, aluS, aluR, isMov, isBeq, isBgt, isUBranch, isImmediate, isBranchTaken);
 	ima: MAUnit port map(clk, op2, aluR, isSt, isLd, ldR);
 

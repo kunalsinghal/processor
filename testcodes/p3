@@ -1,0 +1,8 @@
+b .main
+.foo:
+add r1, r2, r0
+ret
+.main:
+mov r0, 70
+mov r2, -70
+call .foo

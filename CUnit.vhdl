@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity CUnit is
 	port(Instruction: in std_logic_vector(31 downto 0);
-	     isMov, isSt, isLd, isBeq, isBgt, isImmediate, isWb, isUBranch: out boolean; aluS: out std_logic_vector(2 downto 0));
+	     isMov, isSt, isLd, isBeq, isBgt, isImmediate, isWb, isUBranch, isRet, isCall: out boolean; aluS: out std_logic_vector(2 downto 0));
 end entity CUnit;
 
 architecture CU of CUnit is
@@ -15,7 +15,7 @@ begin
 
 	process (op_code, I)
 	begin
-		isMov<=false; isSt<=false; isLd<=false; isBeq<=false; isBgt<=false; isImmediate<=false; isWb<=false; isUBranch<=false;
+		isMov<=false; isSt<=false; isLd<=false; isBeq<=false; isBgt<=false; isImmediate<=false; isWb<=false; isUBranch<=false;isRet<=false;isCall<=false;
 		aluS<="111";
 		if(I='1') then
 			isImmediate<=true;
@@ -57,6 +57,10 @@ begin
 			isBgt<=true;
 		elsif(op_code="10010") then --b
 			isUBranch<=true;
+		elsif(op_code="10011") then --call
+			isCall<=true;isUBranch<=true;
+		elsif(op_code="10100") then --ret
+			isRet<=true;isUBranch<=true;
 		else null;
 		end if;
 	end process;
