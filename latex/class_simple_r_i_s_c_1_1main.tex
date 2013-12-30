@@ -1,0 +1,113 @@
+\hypertarget{class_simple_r_i_s_c_1_1main}{\section{main Architecture Reference}
+\label{class_simple_r_i_s_c_1_1main}\index{main@{main}}
+}
+\subsection*{Components}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a2da5b49da774fb039de79c08078b9c4c}{\hyperlink{class_simple_r_i_s_c_1_1main_a2da5b49da774fb039de79c08078b9c4c}{I\-F\-Unit}  {\bfseries }  }\label{class_simple_r_i_s_c_1_1main_a2da5b49da774fb039de79c08078b9c4c}
+
+\begin{DoxyCompactList}\small\item\em Instruciton Fetch Unit. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a776fe425523eab02e315d8a4d28e30b7}{\hyperlink{class_simple_r_i_s_c_1_1main_a776fe425523eab02e315d8a4d28e30b7}{C\-Unit}  {\bfseries }  }\label{class_simple_r_i_s_c_1_1main_a776fe425523eab02e315d8a4d28e30b7}
+
+\begin{DoxyCompactList}\small\item\em Constrol Unit. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_ad558d5ce62b24bcc71c1098c3b5252f8}{\hyperlink{class_simple_r_i_s_c_1_1main_ad558d5ce62b24bcc71c1098c3b5252f8}{O\-F\-Unit}  {\bfseries }  }\label{class_simple_r_i_s_c_1_1main_ad558d5ce62b24bcc71c1098c3b5252f8}
+
+\begin{DoxyCompactList}\small\item\em Operand Fetch Unit and Register Write Unit. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_aeeb36d4e2f94902e0f51d5f1e619c3f7}{\hyperlink{class_simple_r_i_s_c_1_1main_aeeb36d4e2f94902e0f51d5f1e619c3f7}{E\-X\-Unit}  {\bfseries }  }\label{class_simple_r_i_s_c_1_1main_aeeb36d4e2f94902e0f51d5f1e619c3f7}
+
+\begin{DoxyCompactList}\small\item\em Execute Unit. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_aad9e7d27bfbe753d62128f7d34d08b15}{\hyperlink{class_simple_r_i_s_c_1_1main_aad9e7d27bfbe753d62128f7d34d08b15}{M\-A\-Unit}  {\bfseries }  }\label{class_simple_r_i_s_c_1_1main_aad9e7d27bfbe753d62128f7d34d08b15}
+
+\begin{DoxyCompactList}\small\item\em Memory access unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a5857e39b3d56429139fcaba0533d3961}{\hyperlink{class_simple_r_i_s_c_1_1main_a5857e39b3d56429139fcaba0533d3961}{clk} {\bfseries \textcolor{comment}{std\-\_\-logic}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{'}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{'}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a5857e39b3d56429139fcaba0533d3961}
+
+\begin{DoxyCompactList}\small\item\em Clock Signal initialed with 0. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_aa8e9caeeae56e2652cba742bdb6e6e31}{\hyperlink{class_simple_r_i_s_c_1_1main_aa8e9caeeae56e2652cba742bdb6e6e31}{P\-C} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{X}\textcolor{vhdlchar}{ }\textcolor{keyword}{\char`\"{} F\-F\-F\-F\-F\-F\-F\-C \char`\"{}}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_aa8e9caeeae56e2652cba742bdb6e6e31}
+
+\begin{DoxyCompactList}\small\item\em Program Counter initialized with -\/4. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a0a8debbc78ed5d82965045d4eee97461}{\hyperlink{class_simple_r_i_s_c_1_1main_a0a8debbc78ed5d82965045d4eee97461}{instruction} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a0a8debbc78ed5d82965045d4eee97461}
+
+\begin{DoxyCompactList}\small\item\em The instruction signal. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a2a8e68b780117801c3f167ed6ee136a4}{\hyperlink{class_simple_r_i_s_c_1_1main_a2a8e68b780117801c3f167ed6ee136a4}{is\-Mov} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a2a8e68b780117801c3f167ed6ee136a4}
+
+\begin{DoxyCompactList}\small\item\em boolean for mov statement \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a9d22fe433cd653a8faf71c22d73cb47e}{\hyperlink{class_simple_r_i_s_c_1_1main_a9d22fe433cd653a8faf71c22d73cb47e}{is\-St} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a9d22fe433cd653a8faf71c22d73cb47e}
+
+\begin{DoxyCompactList}\small\item\em boolean for store statement \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a153740b434d3545cd8fa0f244ed26498}{\hyperlink{class_simple_r_i_s_c_1_1main_a153740b434d3545cd8fa0f244ed26498}{is\-Ld} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a153740b434d3545cd8fa0f244ed26498}
+
+\begin{DoxyCompactList}\small\item\em boolean for load statement \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a2cb254fbf3f6002a6b69023e4f99c4ef}{\hyperlink{class_simple_r_i_s_c_1_1main_a2cb254fbf3f6002a6b69023e4f99c4ef}{is\-Beq} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a2cb254fbf3f6002a6b69023e4f99c4ef}
+
+\begin{DoxyCompactList}\small\item\em boolean for branch if equal statement \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a2cf6112b9dbca878e9315f777120a60a}{\hyperlink{class_simple_r_i_s_c_1_1main_a2cf6112b9dbca878e9315f777120a60a}{is\-Bgt} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a2cf6112b9dbca878e9315f777120a60a}
+
+\begin{DoxyCompactList}\small\item\em boolean for branch if greater statement \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a74ba3cf06911e5201a3e2f3f32213258}{\hyperlink{class_simple_r_i_s_c_1_1main_a74ba3cf06911e5201a3e2f3f32213258}{is\-Immediate} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a74ba3cf06911e5201a3e2f3f32213258}
+
+\begin{DoxyCompactList}\small\item\em boolean for the statements whre second operand is an immediate \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_ad9bc07a81c4a0f0e8290dd663797eaac}{\hyperlink{class_simple_r_i_s_c_1_1main_ad9bc07a81c4a0f0e8290dd663797eaac}{is\-Wb} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_ad9bc07a81c4a0f0e8290dd663797eaac}
+
+\begin{DoxyCompactList}\small\item\em boolean for the statements involving writing into register \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a2554956e68f2502184e2b11c6d0bf726}{\hyperlink{class_simple_r_i_s_c_1_1main_a2554956e68f2502184e2b11c6d0bf726}{is\-Ubranch} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a2554956e68f2502184e2b11c6d0bf726}
+
+\begin{DoxyCompactList}\small\item\em boolean for call, ret, b, bgt, beq instructions \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a9febe4603c9484216f7bd07c9ac5465a}{\hyperlink{class_simple_r_i_s_c_1_1main_a9febe4603c9484216f7bd07c9ac5465a}{is\-Branch\-Taken} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a9febe4603c9484216f7bd07c9ac5465a}
+
+\begin{DoxyCompactList}\small\item\em boolean which is true when branch is taken by call, ret, b, bgt, beq instructions \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a4326436a10c51413d01ebb2c8ab4d9a6}{\hyperlink{class_simple_r_i_s_c_1_1main_a4326436a10c51413d01ebb2c8ab4d9a6}{is\-Ret} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a4326436a10c51413d01ebb2c8ab4d9a6}
+
+\begin{DoxyCompactList}\small\item\em boolean for ret instruction \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a374d3926d6376e22fc6ef74d586f36ea}{\hyperlink{class_simple_r_i_s_c_1_1main_a374d3926d6376e22fc6ef74d586f36ea}{is\-Call} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{false}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a374d3926d6376e22fc6ef74d586f36ea}
+
+\begin{DoxyCompactList}\small\item\em boolean for call instruction \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a6ec50893678c7daa0e7fe1c555e11a08}{\hyperlink{class_simple_r_i_s_c_1_1main_a6ec50893678c7daa0e7fe1c555e11a08}{alu\-S} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{2} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a6ec50893678c7daa0e7fe1c555e11a08}
+
+\begin{DoxyCompactList}\small\item\em A\-L\-U Signals generated by the Control Unit for A\-L\-U to perform adequate operation. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a2c7c7c5cf1af62fc1be6fb1c55c9b864}{\hyperlink{class_simple_r_i_s_c_1_1main_a2c7c7c5cf1af62fc1be6fb1c55c9b864}{alu\-R} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{X}\textcolor{vhdlchar}{ }\textcolor{keyword}{\char`\"{} 00000000 \char`\"{}}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a2c7c7c5cf1af62fc1be6fb1c55c9b864}
+
+\begin{DoxyCompactList}\small\item\em Result of the operation by A\-L\-U. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_ab5d29364b579ec10e34fc0befc7fb13b}{\hyperlink{class_simple_r_i_s_c_1_1main_ab5d29364b579ec10e34fc0befc7fb13b}{ld\-R} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{X}\textcolor{vhdlchar}{ }\textcolor{keyword}{\char`\"{} 00000000 \char`\"{}}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_ab5d29364b579ec10e34fc0befc7fb13b}
+
+\begin{DoxyCompactList}\small\item\em value read from register file \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a5487b623285f43fb095d9215681d2b34}{\hyperlink{class_simple_r_i_s_c_1_1main_a5487b623285f43fb095d9215681d2b34}{immediate} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{X}\textcolor{vhdlchar}{ }\textcolor{keyword}{\char`\"{} 00000000 \char`\"{}}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a5487b623285f43fb095d9215681d2b34}
+
+\begin{DoxyCompactList}\small\item\em immediate computer after applying modifiers and bit extension \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_ad010267538d4e382f6edbf4942a81e9a}{\hyperlink{class_simple_r_i_s_c_1_1main_ad010267538d4e382f6edbf4942a81e9a}{branch\-Target} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{X}\textcolor{vhdlchar}{ }\textcolor{keyword}{\char`\"{} 00000000 \char`\"{}}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_ad010267538d4e382f6edbf4942a81e9a}
+
+\begin{DoxyCompactList}\small\item\em brach target computed after adding offset to the program counter \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a168a397ec8f905d38285e1f9832ab64f}{\hyperlink{class_simple_r_i_s_c_1_1main_a168a397ec8f905d38285e1f9832ab64f}{op1} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{X}\textcolor{vhdlchar}{ }\textcolor{keyword}{\char`\"{} 00000000 \char`\"{}}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a168a397ec8f905d38285e1f9832ab64f}
+
+\begin{DoxyCompactList}\small\item\em Fisrt Operand. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a4596ed60c0f2bc645ff64fa8c8ae66ac}{\hyperlink{class_simple_r_i_s_c_1_1main_a4596ed60c0f2bc645ff64fa8c8ae66ac}{op2} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{X}\textcolor{vhdlchar}{ }\textcolor{keyword}{\char`\"{} 00000000 \char`\"{}}\textcolor{vhdlchar}{ }} }\label{class_simple_r_i_s_c_1_1main_a4596ed60c0f2bc645ff64fa8c8ae66ac}
+
+\begin{DoxyCompactList}\small\item\em Second Operand. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Instantiations}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a6915378535caef0a1f9d2cf97dc464b7}{\hyperlink{class_simple_r_i_s_c_1_1main_a6915378535caef0a1f9d2cf97dc464b7}{iif}  {\bfseries I\-F\-Unit}   }\label{class_simple_r_i_s_c_1_1main_a6915378535caef0a1f9d2cf97dc464b7}
+
+\begin{DoxyCompactList}\small\item\em maps the signals to the ports of \hyperlink{class_i_f_unit}{I\-F\-Unit} \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_ae66107dcb400a2c22d4d1316a2de3289}{\hyperlink{class_simple_r_i_s_c_1_1main_ae66107dcb400a2c22d4d1316a2de3289}{icu}  {\bfseries C\-Unit}   }\label{class_simple_r_i_s_c_1_1main_ae66107dcb400a2c22d4d1316a2de3289}
+
+\begin{DoxyCompactList}\small\item\em maps the signals to the ports of \hyperlink{class_c_unit}{C\-Unit} \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_af2805cb31aa7733a71e2d9b7e59bb510}{\hyperlink{class_simple_r_i_s_c_1_1main_af2805cb31aa7733a71e2d9b7e59bb510}{iof}  {\bfseries O\-F\-Unit}   }\label{class_simple_r_i_s_c_1_1main_af2805cb31aa7733a71e2d9b7e59bb510}
+
+\begin{DoxyCompactList}\small\item\em maps the signals to the ports of \hyperlink{class_o_f_unit}{O\-F\-Unit} \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a03911597d8f737c88f243be080110a60}{\hyperlink{class_simple_r_i_s_c_1_1main_a03911597d8f737c88f243be080110a60}{iex}  {\bfseries E\-X\-Unit}   }\label{class_simple_r_i_s_c_1_1main_a03911597d8f737c88f243be080110a60}
+
+\begin{DoxyCompactList}\small\item\em maps the signals to the ports of \hyperlink{class_e_x_unit}{E\-X\-Unit} \end{DoxyCompactList}\item 
+\hypertarget{class_simple_r_i_s_c_1_1main_a35c82dc98430213354cf872354a1ca6b}{\hyperlink{class_simple_r_i_s_c_1_1main_a35c82dc98430213354cf872354a1ca6b}{ima}  {\bfseries M\-A\-Unit}   }\label{class_simple_r_i_s_c_1_1main_a35c82dc98430213354cf872354a1ca6b}
+
+\begin{DoxyCompactList}\small\item\em maps the signals to the ports of \hyperlink{class_m_a_unit}{M\-A\-Unit} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is main assembly of all the components of the prcessor. This is also responsible for generation of clock signal which is sent to all the other components. Further, program counter is also updated in this architecure description only. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_simple_r_i_s_c_8vhdl}{Simple\-R\-I\-S\-C.\-vhdl}\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\hypertarget{class_o_f_unit}{\section{O\-F\-Unit Entity Reference}
+\label{class_o_f_unit}\index{O\-F\-Unit@{O\-F\-Unit}}
+}
+
+
+This the Operand Fetch Unit which also contains the register file implementation.  
+
+
+Inheritance diagram for O\-F\-Unit\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_o_f_unit}
+\end{center}
+\end{figure}
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_o_f_unit_1_1_o_f_u}{O\-F\-U} architecture
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_o_f_unit_1_1_o_f_u}{O\-F\-U} is the architectural description of the operand fetch unit and register file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Libraries}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_o_f_unit_a0a6af6eef40212dbaf130d57ce711256}{\hyperlink{class_o_f_unit_a0a6af6eef40212dbaf130d57ce711256}{ieee} }\label{class_o_f_unit_a0a6af6eef40212dbaf130d57ce711256}
+
+\end{DoxyCompactItemize}
+\subsection*{Use Clauses}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_o_f_unit_a43ecb358105806229eb7a3074fc4d577}{\hyperlink{class_o_f_unit_a43ecb358105806229eb7a3074fc4d577}{ieee.\-std\-\_\-logic\-\_\-1164.\-all}   }\label{class_o_f_unit_a43ecb358105806229eb7a3074fc4d577}
+
+\item 
+\hypertarget{class_o_f_unit_a631689596594b2068e0ee8dadd0931fe}{\hyperlink{class_o_f_unit_a631689596594b2068e0ee8dadd0931fe}{ieee.\-numeric\-\_\-std.\-all}   }\label{class_o_f_unit_a631689596594b2068e0ee8dadd0931fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Ports}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_o_f_unit_a94f6b72ef22091aa46807c9d89632a9b}{\hyperlink{class_o_f_unit_a94f6b72ef22091aa46807c9d89632a9b}{clk}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a94f6b72ef22091aa46807c9d89632a9b}
+
+\begin{DoxyCompactList}\small\item\em C\-L\-O\-C\-K for the unit. \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_a187326d2b4b17c46dcaeead2064c8c82}{\hyperlink{class_o_f_unit_a187326d2b4b17c46dcaeead2064c8c82}{Instruction}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a187326d2b4b17c46dcaeead2064c8c82}
+
+\begin{DoxyCompactList}\small\item\em Complete 32 bit instruction code. \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_a15b73a10b7d4cf16cdae7729404b05da}{\hyperlink{class_o_f_unit_a15b73a10b7d4cf16cdae7729404b05da}{P\-C}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a15b73a10b7d4cf16cdae7729404b05da}
+
+\begin{DoxyCompactList}\small\item\em Program Counter. \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_a15f3af98c390c64fec95e54717345647}{\hyperlink{class_o_f_unit_a15f3af98c390c64fec95e54717345647}{alu\-R}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a15f3af98c390c64fec95e54717345647}
+
+\begin{DoxyCompactList}\small\item\em A\-L\-U Result that is to be written in register in case of an alu instrcution. \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_a853c1b450b6ba2b91af02d5fdb93bc32}{\hyperlink{class_o_f_unit_a853c1b450b6ba2b91af02d5fdb93bc32}{ld\-R}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a853c1b450b6ba2b91af02d5fdb93bc32}
+
+\begin{DoxyCompactList}\small\item\em Load Result that is to be written in register in case of a load instrcution. \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_ada232e9bb13e48ba67c49897a8f2a98c}{\hyperlink{class_o_f_unit_ada232e9bb13e48ba67c49897a8f2a98c}{is\-St}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_ada232e9bb13e48ba67c49897a8f2a98c}
+
+\begin{DoxyCompactList}\small\item\em boolean for store instruction \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_a4f328a19e16850a109722d3bf847ea76}{\hyperlink{class_o_f_unit_a4f328a19e16850a109722d3bf847ea76}{is\-Ld}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a4f328a19e16850a109722d3bf847ea76}
+
+\begin{DoxyCompactList}\small\item\em boolean for load instruction \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_a2824764974bcc836bcb65f7660df3501}{\hyperlink{class_o_f_unit_a2824764974bcc836bcb65f7660df3501}{is\-Wb}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a2824764974bcc836bcb65f7660df3501}
+
+\begin{DoxyCompactList}\small\item\em boolean for writeback that is its true when something is to be written in the register file \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_acc9e88547584f5ec26824185166a68ec}{\hyperlink{class_o_f_unit_acc9e88547584f5ec26824185166a68ec}{is\-Ret}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_acc9e88547584f5ec26824185166a68ec}
+
+\begin{DoxyCompactList}\small\item\em boolean which states whether the instruction is 'ret' \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_a7c4ebeb76d12c2b065431834e3e40b61}{\hyperlink{class_o_f_unit_a7c4ebeb76d12c2b065431834e3e40b61}{is\-Call}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a7c4ebeb76d12c2b065431834e3e40b61}
+
+\begin{DoxyCompactList}\small\item\em boolean which states whether the instruction is 'call' \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_ad63c399e5906690f784966193e1f33f1}{\hyperlink{class_o_f_unit_ad63c399e5906690f784966193e1f33f1}{immediate}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_ad63c399e5906690f784966193e1f33f1}
+
+\begin{DoxyCompactList}\small\item\em 32 bit immediate that has to be computed \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_a0d338d7f0493ce29501b3eb557de0a67}{\hyperlink{class_o_f_unit_a0d338d7f0493ce29501b3eb557de0a67}{branch\-Target}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a0d338d7f0493ce29501b3eb557de0a67}
+
+\begin{DoxyCompactList}\small\item\em This is the branch target which is used in case of a branch or call instruction. \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_a923e4330bf1a7966baa0589fb6b397e6}{\hyperlink{class_o_f_unit_a923e4330bf1a7966baa0589fb6b397e6}{op1}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a923e4330bf1a7966baa0589fb6b397e6}
+
+\begin{DoxyCompactList}\small\item\em First pperand. \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_a014e99b0b5a371c08961e8a6b658d3f4}{\hyperlink{class_o_f_unit_a014e99b0b5a371c08961e8a6b658d3f4}{op2}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_a014e99b0b5a371c08961e8a6b658d3f4}
+
+\begin{DoxyCompactList}\small\item\em Second Operand. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This the Operand Fetch Unit which also contains the register file implementation. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_o_f_unit_8vhdl}{O\-F\-Unit.\-vhdl}\end{DoxyCompactItemize}

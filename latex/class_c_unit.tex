@@ -1,0 +1,78 @@
+\hypertarget{class_c_unit}{\section{C\-Unit Entity Reference}
+\label{class_c_unit}\index{C\-Unit@{C\-Unit}}
+}
+
+
+This is the unit that generates the control signals.  
+
+
+Inheritance diagram for C\-Unit\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_unit}
+\end{center}
+\end{figure}
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_unit_1_1_c_u}{C\-U} architecture
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_c_unit_1_1_c_u}{C\-U} is the architectural description of the Control Unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Libraries}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_unit_a0a6af6eef40212dbaf130d57ce711256}{\hyperlink{class_c_unit_a0a6af6eef40212dbaf130d57ce711256}{ieee} }\label{class_c_unit_a0a6af6eef40212dbaf130d57ce711256}
+
+\end{DoxyCompactItemize}
+\subsection*{Use Clauses}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_unit_a43ecb358105806229eb7a3074fc4d577}{\hyperlink{class_c_unit_a43ecb358105806229eb7a3074fc4d577}{ieee.\-std\-\_\-logic\-\_\-1164.\-all}   }\label{class_c_unit_a43ecb358105806229eb7a3074fc4d577}
+
+\end{DoxyCompactItemize}
+\subsection*{Ports}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_unit_a187326d2b4b17c46dcaeead2064c8c82}{\hyperlink{class_c_unit_a187326d2b4b17c46dcaeead2064c8c82}{Instruction}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_c_unit_a187326d2b4b17c46dcaeead2064c8c82}
+
+\begin{DoxyCompactList}\small\item\em The 32-\/bit instruction coming from the Instruction fetch Unit. \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_a81134d903eb6d6b92bfee5560162a63a}{\hyperlink{class_c_unit_a81134d903eb6d6b92bfee5560162a63a}{is\-Mov}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_c_unit_a81134d903eb6d6b92bfee5560162a63a}
+
+\begin{DoxyCompactList}\small\item\em boolean which states whether the instruction is 'mov' \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_acf493c1820670da4fa6e856436fae09c}{\hyperlink{class_c_unit_acf493c1820670da4fa6e856436fae09c}{is\-St}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_c_unit_acf493c1820670da4fa6e856436fae09c}
+
+\begin{DoxyCompactList}\small\item\em boolean which states whether the instruction is 'st' \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_ad35c473f9f330123d545e49e48459bec}{\hyperlink{class_c_unit_ad35c473f9f330123d545e49e48459bec}{is\-Ld}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_c_unit_ad35c473f9f330123d545e49e48459bec}
+
+\begin{DoxyCompactList}\small\item\em boolean which states whether the instruction is 'ld' \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_aebbb21b47d7fdc5172ad6c088a2c339b}{\hyperlink{class_c_unit_aebbb21b47d7fdc5172ad6c088a2c339b}{is\-Beq}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_c_unit_aebbb21b47d7fdc5172ad6c088a2c339b}
+
+\begin{DoxyCompactList}\small\item\em boolean which states whether the instruction is 'beq' \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_a1df57aa5d86b9d2c21f1ca79aacac3f9}{\hyperlink{class_c_unit_a1df57aa5d86b9d2c21f1ca79aacac3f9}{is\-Bgt}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_c_unit_a1df57aa5d86b9d2c21f1ca79aacac3f9}
+
+\begin{DoxyCompactList}\small\item\em boolean which states whether the instruction is 'bgt' \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_a98e2b65456db66badf1296ad798288be}{\hyperlink{class_c_unit_a98e2b65456db66badf1296ad798288be}{is\-Immediate}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_c_unit_a98e2b65456db66badf1296ad798288be}
+
+\begin{DoxyCompactList}\small\item\em boolean which the instruction has an immediate as the arguments. \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_ab8f0ec8ea90e74b7d464ecad474f9c67}{\hyperlink{class_c_unit_ab8f0ec8ea90e74b7d464ecad474f9c67}{is\-Wb}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_c_unit_ab8f0ec8ea90e74b7d464ecad474f9c67}
+
+\begin{DoxyCompactList}\small\item\em boolean whether something has to be written into the register file. \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_ac34d5f9af81ab3e2e3aa51f7c1e267b3}{\hyperlink{class_c_unit_ac34d5f9af81ab3e2e3aa51f7c1e267b3}{is\-U\-Branch}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_c_unit_ac34d5f9af81ab3e2e3aa51f7c1e267b3}
+
+\begin{DoxyCompactList}\small\item\em boolean whether the statement is a direct branching one(b, ret, call) \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_acd79f46efcd273deffa5a712e1d155b3}{\hyperlink{class_c_unit_acd79f46efcd273deffa5a712e1d155b3}{is\-Ret}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_c_unit_acd79f46efcd273deffa5a712e1d155b3}
+
+\begin{DoxyCompactList}\small\item\em boolean which states whether the instruction is 'ret' \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_a455d189bc702a8327ce22986cbf13c49}{\hyperlink{class_c_unit_a455d189bc702a8327ce22986cbf13c49}{is\-Call}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{boolean}\textcolor{vhdlchar}{ }} }\label{class_c_unit_a455d189bc702a8327ce22986cbf13c49}
+
+\begin{DoxyCompactList}\small\item\em boolean which states whether the instruction is 'call' \end{DoxyCompactList}\item 
+\hypertarget{class_c_unit_a871a1f390d61fb699f64ca9a3f332772}{\hyperlink{class_c_unit_a871a1f390d61fb699f64ca9a3f332772}{alu\-S}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{2} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_c_unit_a871a1f390d61fb699f64ca9a3f332772}
+
+\begin{DoxyCompactList}\small\item\em This vector stores all the states with each 3-\/bit value corresponding to one of the instructions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the unit that generates the control signals. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_c_unit_8vhdl}{C\-Unit.\-vhdl}\end{DoxyCompactItemize}

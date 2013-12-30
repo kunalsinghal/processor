@@ -1,0 +1,37 @@
+\hypertarget{class_i_f_unit_1_1_i_m}{\section{I\-M Architecture Reference}
+\label{class_i_f_unit_1_1_i_m}\index{I\-M@{I\-M}}
+}
+
+
+\hyperlink{class_i_f_unit_1_1_i_m}{I\-M} is the architectural description of the Instruction Fetch Unit.  
+
+
+\subsection*{Processes}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_i_f_unit_1_1_i_m_ac0b0aa4171471237152f7258fc6cd4ac}{\hyperlink{class_i_f_unit_1_1_i_m_ac0b0aa4171471237152f7258fc6cd4ac}{P\-R\-O\-C\-E\-S\-S\-\_\-1}{\bfseries  ( {\bfseries {\bfseries \hyperlink{class_i_f_unit_a15b73a10b7d4cf16cdae7729404b05da}{P\-C}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }} )}}\label{class_i_f_unit_1_1_i_m_ac0b0aa4171471237152f7258fc6cd4ac}
+
+\begin{DoxyCompactList}\small\item\em Executes only when the program counter is changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Types}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_i_f_unit_1_1_i_m_a49bac0fe5abc88bc74320eabd2613b1f}{{\bfseries \hyperlink{class_i_f_unit_1_1_i_m_a49bac0fe5abc88bc74320eabd2613b1f}{memorydef}{\bfseries \textcolor{vhdlkeyword}{array}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{range$<$$>$}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{of}\textcolor{vhdlchar}{ }\textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }}} }\label{class_i_f_unit_1_1_i_m_a49bac0fe5abc88bc74320eabd2613b1f}
+
+\begin{DoxyCompactList}\small\item\em A custom data type for the memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_i_f_unit_1_1_i_m_aff51e4a7013bba9d20b780a6cbb74355}{\hyperlink{class_i_f_unit_1_1_i_m_aff51e4a7013bba9d20b780a6cbb74355}{memory} {\bfseries {\bfseries \hyperlink{class_i_f_unit_1_1_i_m_a49bac0fe5abc88bc74320eabd2613b1f}{memorydef}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{to}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{499} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_i_f_unit_1_1_i_m_aff51e4a7013bba9d20b780a6cbb74355}
+
+\begin{DoxyCompactList}\small\item\em The memory is a 500-\/length array of 32-\/bit vectors,ie, it can handle upto 500 instructions. \end{DoxyCompactList}\item 
+\hypertarget{class_i_f_unit_1_1_i_m_ade171b0fc4e5e65e8b838a33506afea3}{\hyperlink{class_i_f_unit_1_1_i_m_ade171b0fc4e5e65e8b838a33506afea3}{max\-Count} {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }} }\label{class_i_f_unit_1_1_i_m_ade171b0fc4e5e65e8b838a33506afea3}
+
+\begin{DoxyCompactList}\small\item\em Marks the maximum Program counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_i_f_unit_1_1_i_m}{I\-M} is the architectural description of the Instruction Fetch Unit. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_i_f_unit_8vhdl}{I\-F\-Unit.\-vhdl}\end{DoxyCompactItemize}

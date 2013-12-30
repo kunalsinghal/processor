@@ -1,0 +1,42 @@
+\hypertarget{class_o_f_unit_1_1_o_f_u}{\section{O\-F\-U Architecture Reference}
+\label{class_o_f_unit_1_1_o_f_u}\index{O\-F\-U@{O\-F\-U}}
+}
+
+
+\hyperlink{class_o_f_unit_1_1_o_f_u}{O\-F\-U} is the architectural description of the operand fetch unit and register file.  
+
+
+\subsection*{Processes}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_o_f_unit_1_1_o_f_u_ad6cab3590f19d09760591444870d2e29}{P\-R\-O\-C\-E\-S\-S\-\_\-3}{\bfseries  (  )}
+\end{DoxyCompactItemize}
+\subsection*{Types}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_o_f_unit_1_1_o_f_u_a7214ee86d8486f4a264c9251cb623069}{{\bfseries \hyperlink{class_o_f_unit_1_1_o_f_u_a7214ee86d8486f4a264c9251cb623069}{regvec}{\bfseries \textcolor{vhdlkeyword}{array}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{15} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{of}\textcolor{vhdlchar}{ }\textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }}} }\label{class_o_f_unit_1_1_o_f_u_a7214ee86d8486f4a264c9251cb623069}
+
+\begin{DoxyCompactList}\small\item\em A custom data type which is a 16 x 32 array or vector of bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_o_f_unit_1_1_o_f_u_aad72c6f18f2ed17dab71807f9fcf8778}{\hyperlink{class_o_f_unit_1_1_o_f_u_aad72c6f18f2ed17dab71807f9fcf8778}{reg} {\bfseries {\bfseries \hyperlink{class_o_f_unit_1_1_o_f_u_a7214ee86d8486f4a264c9251cb623069}{regvec}} \textcolor{vhdlchar}{ }} }\label{class_o_f_unit_1_1_o_f_u_aad72c6f18f2ed17dab71807f9fcf8778}
+
+\begin{DoxyCompactList}\small\item\em reg is the register file of data type regvec that is it has 16 32-\/bit vector fields \end{DoxyCompactList}\item 
+\hypertarget{class_o_f_unit_1_1_o_f_u_a981d141369765d0e214128c4f3d8ecbb}{\hyperlink{class_o_f_unit_1_1_o_f_u_a981d141369765d0e214128c4f3d8ecbb}{temp} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{class_o_f_unit_1_1_o_f_u_a981d141369765d0e214128c4f3d8ecbb}
+
+\begin{DoxyCompactList}\small\item\em temp is the signal which is used for signed extension of offset, offset is Instruction(26 downto 0) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_o_f_unit_1_1_o_f_u}{O\-F\-U} is the architectural description of the operand fetch unit and register file. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_o_f_unit_1_1_o_f_u_ad6cab3590f19d09760591444870d2e29}{\index{O\-F\-Unit\-::\-O\-F\-U@{O\-F\-Unit\-::\-O\-F\-U}!P\-R\-O\-C\-E\-S\-S\-\_\-3@{P\-R\-O\-C\-E\-S\-S\-\_\-3}}
+\index{P\-R\-O\-C\-E\-S\-S\-\_\-3@{P\-R\-O\-C\-E\-S\-S\-\_\-3}!OFUnit::OFU@{O\-F\-Unit\-::\-O\-F\-U}}
+\subsubsection[{P\-R\-O\-C\-E\-S\-S\-\_\-3}]{\setlength{\rightskip}{0pt plus 5cm} {\bfseries \textcolor{vhdlchar}{ }} P\-R\-O\-C\-E\-S\-S\-\_\-3 ( ) \hspace{0.3cm}{\ttfamily [Process]}}}\label{class_o_f_unit_1_1_o_f_u_ad6cab3590f19d09760591444870d2e29}
+First of all immediate is computed after sign extesnion, if 17th bit of the instruction is 1 then sign extension is not done and if the 18th bit is 1 then the 16-\/bit immediate is shifted left by 16 bits to get the modified immidiate. The branch targeet is computer as $<$ program counter + 4 $\ast$ offset $>$ offset is stored as Instruction(15 downto 0). Frst operand is computer as reg(rs1) where rs1 is stored in Instruction(21 downto 18). Second operand is either reg(rs2) where rs1 is stored in Instruction(17 downto 14) or it is reg(rd) in case of a store instruction where rd is stored as Instruction(25 downto 22). 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_o_f_unit_8vhdl}{O\-F\-Unit.\-vhdl}\end{DoxyCompactItemize}
